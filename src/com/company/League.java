@@ -15,8 +15,11 @@ public class League {
     }
 
     public void showTable() {
+        System.out.println("League:\n"+
+                "----------------------");
         for( Team i: this.league) {
-            System.out.println("League:"+i.getName());
+            System.out.println(i.getName());
         }
+        System.out.println("----------------------");
     }
 }
