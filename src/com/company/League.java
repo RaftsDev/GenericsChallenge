@@ -10,6 +10,10 @@ public class League {
         this.name = name;
     }
 
+    public void addTeam(Team team){
+        this.league.add(team);
+    }
+
     public void showTable() {
         for( Team i: this.league) {
             System.out.println("League:"+i.getName());
