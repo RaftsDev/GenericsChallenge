@@ -14,7 +14,7 @@ public class Main {
         League league = new League("Basketball league");
         league.addTeam(chBulls);
         league.addTeam(nycBulls);
-        league.addTeam(pitPing);
+        league.addTeam(pitPing);//Hockey team in same league.
 
         league.showTable();
 
