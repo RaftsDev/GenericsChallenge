@@ -9,6 +9,14 @@ public class Main {
         HockeyTeam pitPing = new HockeyTeam("Pit Ping");
         HockeyTeam atlanticPing = new HockeyTeam("Atlantic Ping");
 
+        //Adding to League
+
+        League league = new League("Basketball league");
+        league.addTeam(chBulls);
+        league.addTeam(nycBulls);
+        league.addTeam(pitPing);
+
+        league.showTable();
 
     }
 }
