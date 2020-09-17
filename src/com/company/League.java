@@ -2,15 +2,15 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class League {
+public class League<T extends Team> {
     private String name;
-    ArrayList<Team> league = new ArrayList<Team>();
+    ArrayList<T> league = new ArrayList<>();
 
     public League(String name) {
         this.name = name;
     }
 
-    public void addTeam(Team team){
+    public void addTeam(T team){
         this.league.add(team);
     }
 
