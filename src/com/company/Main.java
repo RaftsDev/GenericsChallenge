@@ -28,7 +28,6 @@ public class Main {
         //hockeyTeamLeague.addTeam(chBulls); //Error popup.
 
         hockeyTeamLeague.showTable();
-
-
+//
     }
 }
