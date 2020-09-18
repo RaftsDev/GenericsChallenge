@@ -2,14 +2,14 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class Team {
+public class Team<T> {
     private String name;
     int played=0;
     int won = 0;
     int lost = 0;
     int tied = 0;
 
-    private ArrayList<Player> members = new ArrayList<>();
+    private ArrayList<T> members = new ArrayList<>();
 
     public Team(String name) {
         this.name = name;
@@ -19,12 +19,12 @@ public class Team {
         return name;
     }
 
-    public boolean addPlayer(Player player){
+    public boolean addPlayer(T player){
         if(members.contains(player)){
-            System.out.println("Player: "+player.getName()+"is already in a team.");
+            System.out.println("Player: "+((Player) player).getName()+"is already in a team.");
             return false;
         }else {
-            System.out.println("Player: "+player.getName()+" is picked for a team.");
+            System.out.println("Player: "+((Player) player).getName()+" is picked for a team.");
             members.add(player);
             return true;
         }
