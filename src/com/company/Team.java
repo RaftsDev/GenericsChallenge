@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class Team<T> {
+public class Team<T extends Player> {
     private String name;
     int played=0;
     int won = 0;
@@ -21,10 +21,10 @@ public class Team<T> {
 
     public boolean addPlayer(T player){
         if(members.contains(player)){
-            System.out.println("Player: "+((Player) player).getName()+"is already in a team.");
+            System.out.println("Player: "+ player.getName()+"is already in a team.");
             return false;
         }else {
-            System.out.println("Player: "+((Player) player).getName()+" is picked for a team.");
+            System.out.println("Player: "+ player.getName()+" is picked for a team.");
             members.add(player);
             return true;
         }
