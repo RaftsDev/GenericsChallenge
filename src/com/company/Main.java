@@ -20,5 +20,17 @@ public class Main {
         Team<SoccerPlayer> brokenTeam = new Team<>("Broken team");
         brokenTeam.addPlayer(beckham);
 
+        Team<FootballPlayer> melbourne = new Team<>("Melbourne");
+        FootballPlayer banks = new FootballPlayer("Gordon");
+        melbourne.addPlayer(banks);
+
+        Team<FootballPlayer> hawthorn = new Team<>("Hawthorn");
+        Team<FootballPlayer> fremantle = new Team<>("Fremantle");
+
+        hawthorn.matchResult(fremantle,1,0);
+        hawthorn.matchResult(adelaideCrows,3,8);
+        adelaideCrows.matchResult(fremantle,2,1);
+        adelaideCrows.matchResult(baseballTeam,1,1);
+
     }
 }
