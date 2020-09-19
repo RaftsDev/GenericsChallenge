@@ -9,8 +9,8 @@ public class Main {
 
         Team<FootballPlayer> adelaideCrows = new Team<>("Adelaide Crows");
         adelaideCrows.addPlayer(joe);
-        //adelaideCrows.addPlayer(pat);
-        //adelaideCrows.addPlayer(beckham);
+        //adelaideCrows.addPlayer(pat); //Error by parametrizied type
+        //adelaideCrows.addPlayer(beckham); //Error by parametrizied type
 
         System.out.println("Num of members in team: "+adelaideCrows.numPlayers());
 
