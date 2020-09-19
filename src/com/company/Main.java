@@ -30,7 +30,7 @@ public class Main {
         hawthorn.matchResult(fremantle,1,0);
         hawthorn.matchResult(adelaideCrows,3,8);
         adelaideCrows.matchResult(fremantle,2,1);
-        adelaideCrows.matchResult(baseballTeam,1,1);
+        //adelaideCrows.matchResult(baseballTeam,1,1); //Error by parametrizied type
 
     }
 }
