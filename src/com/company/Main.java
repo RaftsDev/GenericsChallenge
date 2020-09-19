@@ -38,5 +38,7 @@ public class Main {
         System.out.println(melbourne.getName() + ": "+ melbourne.ranking());
         System.out.println(fremantle.getName() + ": "+ fremantle.ranking());
         System.out.println(hawthorn.getName() + ": "+ hawthorn.ranking());
+
+
     }
 }
